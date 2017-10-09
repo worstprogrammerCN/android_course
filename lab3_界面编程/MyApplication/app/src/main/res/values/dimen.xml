@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">20sp</dimen>
+    <dimen name="titleMarginTop">20dp</dimen>
+    <dimen name="imgMarginTop">20dp</dimen>
+    <dimen name="editTextMarginRight">20dp</dimen>
+    <dimen name="editTextSize">18sp</dimen>
+    <dimen name="secondEditTextMarginTop">20dp</dimen>
+</resources>
