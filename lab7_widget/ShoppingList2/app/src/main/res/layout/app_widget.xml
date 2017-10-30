@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/widget"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/widgetImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/shoplist"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/widgetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/widgetImg"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:text="当前没有任何信息"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/widgetText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:background="#09C"-->
+        <!--android:contentDescription="@string/appwidget_text"-->
+        <!--android:text="@string/appwidget_text"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="24sp"-->
+        <!--android:textStyle="bold|italic" />-->
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShoppingList</string>
+    <string name="action_settings">Settings</string>
+    <string name="appwidget_defaultText">当前没有任何信息</string>
+    <string name="add_widget">Add widget</string>
+    <string name="appwidget_text">EXAMPLE</string>
+</resources>

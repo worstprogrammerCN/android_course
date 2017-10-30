@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/operationItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackText"
+        android:textSize="@dimen/detailItemText"
+        android:text="查看更多商品促销信息"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"/>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/greyLine"/>
+</LinearLayout>

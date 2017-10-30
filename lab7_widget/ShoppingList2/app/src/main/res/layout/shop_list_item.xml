@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <View
+        android:layout_height="0.05dp"
+        android:layout_width="match_parent"
+        android:background="@color/greyLine"/>
+    <TextView
+        android:id="@+id/shopListlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="*"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/round_label"/>
+    <TextView
+        android:id="@+id/shopListname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="购物车"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintLeft_toRightOf="@id/shopListlabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:id="@+id/shopListprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="90dp"/>
+</android.support.constraint.ConstraintLayout>
