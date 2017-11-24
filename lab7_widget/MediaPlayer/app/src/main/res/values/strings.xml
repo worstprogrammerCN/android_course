@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MediaPlayer</string>
+    <string name="btn_stop">STOP</string>
+    <string name="btn_start">START</string>
+    <string name="btn_pause">PAUSE</string>
+    <string name="btn_quit">QUIT</string>
+</resources>
