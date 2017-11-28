@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent">
@@ -10,7 +12,7 @@
         android:layout_weight="0.7">
 
         <ImageView
-            android:id="@+id/photo"
+            android:id="@+id/img"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.5" />
@@ -54,27 +56,29 @@
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <TextView
-            android:text="生卒年月："
-            android:textStyle="bold"
-            android:textSize="20dp"
-            android:textColor="@color/primary_black"
-            android:gravity="center"
-            android:layout_weight="2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="生卒年月："
+            android:textColor="@color/primary_black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
         <ImageView
             android:background="@color/super_light_grey"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
+
         <TextView
-            android:textSize="20dp"
-            android:textColor="@color/primary_black"
-            android:gravity="center"
-            android:id="@+id/date"
-            android:layout_weight="1"
+            android:id="@+id/birthdate"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/primary_black"
+            android:textSize="20dp" />
     </LinearLayout>
     <ImageView
         android:background="@color/super_light_grey"
@@ -97,14 +101,15 @@
             android:background="@color/super_light_grey"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
+
         <TextView
-            android:layout_weight="1"
-            android:textSize="20dp"
-            android:textColor="@color/primary_black"
-            android:gravity="center"
-            android:id="@+id/force"
+            android:id="@+id/shili"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/primary_black"
+            android:textSize="20dp" />
     </LinearLayout>
     <ImageView
         android:background="@color/super_light_grey"
@@ -127,31 +132,48 @@
             android:background="@color/super_light_grey"
             android:layout_width="1dp"
             android:layout_height="match_parent" />
+
         <TextView
-            android:textSize="20dp"
-            android:textColor="@color/primary_black"
-            android:gravity="center"
-            android:id="@+id/origin"
-            android:layout_weight="1"
+            android:id="@+id/hometown"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/primary_black"
+            android:textSize="20dp" />
     </LinearLayout>
     <ImageView
         android:background="@color/super_light_grey"
         android:layout_width="match_parent"
         android:layout_height="1dp" />
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_weight="1"
         android:background="@color/super_light_grey"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <Button
             android:id="@+id/change"
+            android:layout_width="181dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="4dp"
             android:text="修改信息"
             android:textSize="30dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+            app:layout_constraintEnd_toStartOf="@+id/delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="176dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="4dp"
+            android:text="删除人物"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/change"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
     <ImageView
         android:background="@color/super_light_grey"
         android:layout_width="match_parent"
