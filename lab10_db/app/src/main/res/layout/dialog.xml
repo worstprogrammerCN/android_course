@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="6dp"
+    android:paddingTop="0dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="恭喜发财(*^▽^*)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="姓名"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/tv_birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="生日"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_gift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="礼物"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_birthday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_birthday" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="aabbbbbbbbbbbbbb"
+        app:layout_constraintStart_toEndOf="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+    <EditText
+        android:id="@+id/ed_birthday"
+        android:layout_width="146dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="8dp"
+        android:hint="生日"
+        android:paddingBottom="6dp"
+        android:paddingTop="0dp"
+        android:singleLine="false"
+        app:layout_constraintLeft_toRightOf="@+id/tv_birthday"
+        app:layout_constraintTop_toTopOf="@id/tv_birthday" />
+
+    <EditText
+        android:id="@+id/ed_gift"
+        android:layout_width="146dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:hint="礼物"
+        android:paddingBottom="6dp"
+        android:paddingTop="0dp"
+        android:singleLine="false"
+        app:layout_constraintBottom_toTopOf="@+id/tv_phone"
+        app:layout_constraintLeft_toRightOf="@id/tv_gift"
+        app:layout_constraintTop_toTopOf="@id/tv_gift" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="电话"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_gift"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gift" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:text="无"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_phone"
+        app:layout_constraintTop_toTopOf="@+id/tv_phone" />
+
+</android.support.constraint.ConstraintLayout>
