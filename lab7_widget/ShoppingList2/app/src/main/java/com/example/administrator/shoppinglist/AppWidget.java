@@ -52,7 +52,7 @@ public class AppWidget extends AppWidgetProvider {
             String price = product.getPrice();
             int img = product.getImgResource();
 
-            // widget 内容改为 "xxx仅售$price!"
+            // widget 内容设置为 "xxx仅售$price!"
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.app_widget);
             views.setImageViewResource(R.id.widgetImg, img);
             views.setTextViewText(R.id.widgetText, name + "仅售" + price + "!");

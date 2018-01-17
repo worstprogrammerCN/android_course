@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="aaa"
+    android:textAlignment="center"
+    android:textColor="@android:color/holo_red_dark"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
